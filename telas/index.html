@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/./organ/imagens/favicon.ico" type="image/x-icon" />
+    <title>Biblioteca</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Biblioteca Online</h1>
+        <div class="row">
+            <!-- Exemplo de livro 1 -->
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro1.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro1-capa.jpg') }}" class="img-fluid" alt="Livro 1" />
+                </a>
+            </div>
+            <!-- Exemplo de livro 2 -->
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro2.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro2-capa.jpg') }}" class="img-fluid" alt="Livro 2" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro3.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro3-capa.jpg') }}" class="img-fluid" alt="Livro 3" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro4.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro4-capa.jpg') }}" class="img-fluid" alt="Livro 4" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro5.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro5-capa.jpg') }}" class="img-fluid" alt="Livro 5" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro6.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro6-capa.jpg') }}" class="img-fluid" alt="Livro 6" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro7.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro7-capa.jpg') }}" class="img-fluid" alt="Livro 7" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro8.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro8-capa.jpg') }}" class="img-fluid" alt="Livro 8" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro9.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro9-capa.jpg') }}" class="img-fluid" alt="Livro 9" />
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro10.pdf') }}" target="_blank">
+                    <img src="{{ url_for('organ', filename='imagens/livro10-capa.jpg') }}" class="img-fluid" alt="Livro 10" />
+                </a>
+            </div>
+
+            
+        </div>
+        <a href="{{ url_for('mostrar_ultimos') }}" class="btn btn-primary mt-4">Ver últimos livros abertos</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
