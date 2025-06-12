@@ -1,7 +1,8 @@
 from flask import Flask, render_template, send_from_directory, session, redirect, url_for
 
-app = Flask(__name__)
-app.secret_key = 'testes1'  # necessária para sessões
+app = Flask(__name__, template_folder='telas', static_folder='organ')
+
+app.secret_key = '123456'  # necessária para sessões
 
 # Rota para página inicial
 @app.route('/')
