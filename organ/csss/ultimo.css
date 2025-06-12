@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url("../imagens/fundo-imagem.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.imagem-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.caixa-conteudo {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo-ultimos {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.linha-ultimos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.livro-aberto {
+    flex: 0 0 200px;
+    text-align: center;
+}
+
+.capa-aberto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.capa-aberto:hover {
+    transform: scale(1.05);
+}
+
+.texto-vazio {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.botao-voltar {
+    display: block;
+    margin: 40px auto 0;
+}
