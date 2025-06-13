@@ -11,17 +11,15 @@
 <body>
     <div class="container mt-4">
         <h1 class="mb-4 titulo-principal">Biblioteca do T.I Online</h1>
-
-        <h3 class=" titulo-livros">Infraestrutura</h3>
+        <h2 class=" titulo-livros">Logica de Programação</h2>
+        
         <div class="lista-livros row">
             <div class="livro col-sm-6 col-md-3 mb-3">
                 <a href="{{ url_for('abrir_livro', filename='livro1.pdf') }}" target="_blank">
                     <img src="{{ url_for('static', filename='imagens/livro1-capa.jpg') }}" class="livro-capa" alt="Livro 1">
-                </a>
+                </a> 
                 <p class="livro-titulo">Algoritmos e Lógica de programação</p>
-            </div>
-
-            
+            </div>            
             <div class="livro col-sm-6 col-md-3 mb-3">
                 <a href="{{ url_for('abrir_livro', filename='livro2.pdf') }}" target="_blank">
                     <img src="{{ url_for('static', filename='imagens/livro2-capa.jpg') }}" class="livro-capa" alt="Livro 2">
@@ -29,19 +27,20 @@
                 <p class="livro-titulo">Python Para Iniciantes</p>
             </div>
             <div class="livro col-sm-6 col-md-3 mb-3">
-                <a href="{{ url_for('abrir_livro', filename='livro3.pdf') }}" target="_blank">
-                    <img src="{{ url_for('static', filename='imagens/livro3-capa.jpg') }}" class="livro-capa" alt="Livro 3">
+                <a href="{{ url_for('abrir_livro', filename='livro6.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro6-capa.jpg') }}" class="livro-capa" alt="Livro 6">
                 </a>
-                <p class="livro-titulo">informática Básica</p>
+            <p class="livro-titulo">Logica de Programação em Java</p>
             </div>
             <div class="livro col-sm-6 col-md-3 mb-3">
-                <a href="{{ url_for('abrir_livro', filename='livro4.pdf') }}" target="_blank">
-                    <img src="{{ url_for('static', filename='imagens/livro4-capa.jpg') }}" class="livro-capa" alt="Livro 4">
+                <a href="{{ url_for('abrir_livro', filename='livro10.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro10-capa.jpg') }}" class="livro-capa" alt="Livro 10">
                 </a>
-                <p class="livro-titulo">Linux Completo</p>
+                <p class="livro-titulo">Git e GitHub</p>
             </div>
 
-            <h3 class=" titulo-livros">Logica de Programação</h3>
+            <h2 class=" titulo-livros">Infraestrutura</h2>
+
             <div class="livro col-sm-6 col-md-3 mb-3">
                 <a href="{{ url_for('abrir_livro', filename='livro5.pdf') }}" target="_blank">
                     <img src="{{ url_for('static', filename='imagens/livro5-capa.jpg') }}" class="livro-capa" alt="Livro 5">
@@ -50,10 +49,10 @@
             </div>
 
             <div class="livro col-sm-6 col-md-3 mb-3">
-                <a href="{{ url_for('abrir_livro', filename='livro6.pdf') }}" target="_blank">
-                    <img src="{{ url_for('static', filename='imagens/livro6-capa.jpg') }}" class="livro-capa" alt="Livro 6">
+                <a href="{{ url_for('abrir_livro', filename='livro4.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro4-capa.jpg') }}" class="livro-capa" alt="Livro 4">
                 </a>
-            <p class="livro-titulo">Logica de Programação em Java</p>
+                <p class="livro-titulo">Linux Completo</p>
             </div>
             <div class="livro col-sm-6 col-md-3 mb-3">
                 <a href="{{ url_for('abrir_livro', filename='livro7.pdf') }}" target="_blank">
@@ -68,7 +67,7 @@
                 <p class="livro-titulo">Computação em Nuvem</p>
             </div>
 
-            <h3 class=" titulo-livros">Estrutura </h3>
+            <h2 class=" titulo-livros">Estrutura </h2>
             <div class="livro col-sm-6 col-md-3 mb-3">
                 <a href="{{ url_for('abrir_livro', filename='livro9.pdf') }}" target="_blank">
                     <img src="{{ url_for('static', filename='imagens/livro9-capa.jpg') }}" class="livro-capa" alt="Livro 9">
@@ -76,10 +75,10 @@
                 <p class="livro-titulo">Estrutura de Dados</p>
             </div>
             <div class="livro col-sm-6 col-md-3 mb-3">
-                <a href="{{ url_for('abrir_livro', filename='livro10.pdf') }}" target="_blank">
-                    <img src="{{ url_for('static', filename='imagens/livro10-capa.jpg') }}" class="livro-capa" alt="Livro 10">
+                <a href="{{ url_for('abrir_livro', filename='livro3.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro3-capa.jpg') }}" class="livro-capa" alt="Livro 3">
                 </a>
-                <p class="livro-titulo">Git e GitHub</p>
+                <p class="livro-titulo">informática Básica</p>
             </div>
             <div class="livro col-sm-6 col-md-3 mb-3">
                 <a href="{{ url_for('abrir_livro', filename='livro11.pdf') }}" target="_blank">
@@ -87,21 +86,65 @@
                 </a>
                 <p class="livro-titulo">Tecnologia da Informação e Comunicação</p>
             </div>
+            <div class="livro col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro18.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro18-capa.jpg') }}" class="livro-capa" alt="Livro 10">
+                </a>
+                <p class="livro-titulo">Introdução a Teste de Software</p>
+            </div>
 
-            <h3 class=" titulo-livros">Engenharia de Software</h3>
+            <h2 class=" titulo-livros">Engenharia de Software</h2>
             <div class="livro col-sm-6 col-md-3 mb-3">
                 <a href="{{ url_for('abrir_livro', filename='livro12.pdf') }}" target="_blank">
                     <img src="{{ url_for('static', filename='imagens/livro12-capa.jpg') }}" class="livro-capa" alt="Livro 10">
                 </a>
                 <p class="livro-titulo">Kanban em 10 Passos</p>
             </div>
-             <div class="livro col-sm-6 col-md-3 mb-3">
+            <div class="livro col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro17.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro17-capa.jpg') }}" class="livro-capa" alt="Livro 10">
+                </a>
+                <p class="livro-titulo">Sistemas embarcados</p>
+            </div>
+            <div class="livro col-sm-6 col-md-3 mb-3">
                 <a href="{{ url_for('abrir_livro', filename='livro13.pdf') }}" target="_blank">
                     <img src="{{ url_for('static', filename='imagens/livro13-capa.jpg') }}" class="livro-capa" alt="Livro 10">
                 </a>
                 <p class="livro-titulo">Scrum e XP direto das Trincheiras</p>
             </div>
-        </div>
+            <div class="livro col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro19.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro19-capa.jpg') }}" class="livro-capa" alt="Livro 10">
+                </a>
+                <p class="livro-titulo">Arquitetura e Organização de Computadores</p>
+            </div>
+
+            <h2 class=" titulo-livros"> Outros</h2>
+            <div class="livro col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro16.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro16-capa.jpg') }}" class="livro-capa" alt="Livro 10">
+                </a>
+                <p class="livro-titulo">Introdução a Computação Grafica</p>
+            </div>
+            <div class="livro col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro14.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro14-capa.jpg') }}" class="livro-capa" alt="Livro 10">
+                </a>
+                <p class="livro-titulo">Inteligência Artificial</p>
+            </div>
+            <div class="livro col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro15.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro15-capa.jpg') }}" class="livro-capa" alt="Livro 10">
+                </a>
+                <p class="livro-titulo">E-book DevOps</p>
+            </div>
+            <div class="livro col-sm-6 col-md-3 mb-3">
+                <a href="{{ url_for('abrir_livro', filename='livro20.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='imagens/livro20-capa.jpg') }}" class="livro-capa" alt="Livro 10">
+                </a>
+                <p class="livro-titulo">Método Ágeis</p>
+            </div>
+
     </div>
     <a href="{{ url_for('mostrar_ultimos') }}" class="btn btn-primary botao-ultimos"> Ver últimos livros abertos 📚</a>
     

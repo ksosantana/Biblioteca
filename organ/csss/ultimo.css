@@ -7,7 +7,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    color: #333;
+    color: #dddddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .imagem-fundo {
@@ -23,9 +29,11 @@ body {
 .caixa-conteudo {
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #0000006b;
     padding: 20px;
     border-radius: 10px;
+    width: 100%;
+    max-width: 1100px;
 }
 
 .titulo-ultimos {
@@ -37,26 +45,44 @@ body {
 .linha-ultimos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 6%;
+    margin-bottom: 10%;
 }
 
+/* MESMO ESTILO DOS LIVROS DA BIBLIOTECA */
 .livro-aberto {
-    flex: 0 0 200px;
+    background: rgb(0 0 0 / 74%);
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #d500ff;
+    padding: 12px;
+    font-size: 10px;
     text-align: center;
+    color: #02080a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    margin: 15px;
+}
+
+.livro-aberto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .capa-aberto {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: auto;
+    max-height: 240px;
+    object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
 }
 
-.capa-aberto:hover {
-    transform: scale(1.05);
+.livro-titulo {
+    font-size: 17px;
+    margin-top: 10px;
+    color: lemonchiffon;
+    font-weight: normal;
 }
 
 .texto-vazio {

@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Últimos Livros Abertos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../organ/csss/ultimo.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='csss/ultimo.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='imagens/favicon.ico') }}" type="image/x-icon" />
 </head>
-<body>
-    <img class="imagem-fundo" src="{{ url_for('static', filename='imagens/fundo-imagem.jpeg') }}" alt="Imagem de fundo">
-    
-    <div class="caixa-conteudo container mt-4">
-        <h1 class="titulo-ultimos">Últimos Livros Abertos</h1>
+<body>    
 
-        {% if ultimos %}
-        <div class="linha-ultimos row">
-            {% for livro in ultimos %}
-            <div class="livro-aberto col-sm-6 col-md-3 mb-4">
-                <a href="{{ url_for('abrir_livro', filename=livro) }}" target="_blank">
-                    <img src="{{ url_for('static', filename='imagens/' + livro.replace('.pdf', '-capa.jpg')) }}" class="capa-aberto img-fluid" alt="{{ livro }}">
-                </a>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="caixa-conteudo w-100">
+            <h1 class="titulo-ultimos">Últimos Livros Abertos</h1>
+
+            {% if ultimos %}
+            <div class="lista-livros row justify-content-center">
+                {% for livro in ultimos %}
+                <div class="livro-aberto col-sm-6 col-md-3 mb-4">
+                    <a href="{{ url_for('abrir_livro', filename=livro.arquivo) }}" target="_blank">
+                        <img src="{{ url_for('static', filename='imagens/' + livro.arquivo.replace('.pdf', '-capa.jpg')) }}" class="capa-aberto" alt="{{ livro.nome }}">
+                    </a>
+                    <p class="livro-titulo">{{ livro.nome }}</p>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
-        {% else %}
-        <p class="texto-vazio">Nenhum livro aberto ainda.</p>
-        {% endif %}
+            {% else %}
+            <p class="texto-vazio">Nenhum livro aberto ainda.</p>
+            {% endif %}
 
-        <a href="{{ url_for('index') }}" class="botao-voltar btn btn-secondary mt-4">Voltar para Biblioteca</a>
+            <a href="{{ url_for('index') }}" class="botao-voltar btn btn-secondary mt-4">Voltar para Biblioteca</a>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

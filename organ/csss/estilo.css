@@ -31,7 +31,7 @@ body {
 }
 
 .livro {
-        background: rgb(13 110 253 / 34%);
+    background: rgb(0 0 0 / 74%);
     border: 2px solid #333;
     border-radius: 12px;
     box-shadow: 0 4px 10px #d500ff;
@@ -64,7 +64,7 @@ body {
 }
 
 .botao-ultimos {
-   position: fixed;
+    position: fixed;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
